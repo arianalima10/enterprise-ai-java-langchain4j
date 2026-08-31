@@ -5,7 +5,8 @@ import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
 
-@RegisterAiService
+// A anotação agora inclui a referência à nossa classe de Tools
+@RegisterAiService(tools = BookingTools.class)
 public interface PackageExpert {
 
     @SystemMessage("""
