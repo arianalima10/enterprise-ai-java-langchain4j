@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2f0ed81a-bf42-43fc-ae51-448728c7c090" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/PackageExpert.java" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/PackageExpert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/BookingTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/BookingTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/TravelAgentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/agencia-viagem-ai/src/main/java/dev/ia/TravelAgentResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
