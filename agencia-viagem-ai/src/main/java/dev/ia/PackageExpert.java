@@ -4,9 +4,9 @@ import dev.langchain4j.service.MemoryId;
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
 import io.quarkiverse.langchain4j.RegisterAiService;
+import io.quarkiverse.langchain4j.mcp.runtime.McpToolBox;
 
-// A anotação agora inclui a referência à nossa classe de Tools
-@RegisterAiService(tools = BookingTools.class)
+@RegisterAiService
 public interface PackageExpert {
 
     @SystemMessage("""
@@ -17,5 +17,8 @@ public interface PackageExpert {
         Se a resposta para uma pergunta não estiver nos documentos, você deve responder educadamente:
         'Desculpe, mas não tenho informações sobre isso. Posso ajudar com mais alguma dúvida sobre nossos pacotes?'
         """)
-    String chat(@MemoryId String memoryId, @UserMessage String userMessage);
+    @McpToolBox("booking-server") // Conexão com o MCP
+    // Prompt Template, apenas para ficar mais estruturado com os parâmetros {message} e {username}
+    @UserMessage("Do what user is asking {message}. The user used for authentication is {username}.")
+    String chat(@MemoryId String memoryId, String message, String username);
 }
